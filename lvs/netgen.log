@@ -1,4 +1,4 @@
-Netgen 1.5.273 compiled on Sat Oct 19 17:04:39 EDT 2024
+Netgen 1.5.292 compiled on Sat Mar 15 21:11:52 EDT 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5
@@ -40,7 +40,7 @@ Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__res_high_po_1p41
 Creating placeholder cell definition.
 
-Reading setup file /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Reading setup file /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
 
 Model sky130_fd_pr__res_high_po_1p41 pin 1 == 2
 No property w found for device sky130_fd_pr__res_high_po_1p41
@@ -251,10 +251,6 @@ Circuit contains 16 nets.
 Circuit 1 contains 14 devices, Circuit 2 contains 14 devices.
 Circuit 1 contains 16 nets,    Circuit 2 contains 16 nets.
 
-  Flattening non-matched subcircuits comparator_high_gain comparator_high_gain
-
-Flattening instances of comparator_high_gain in file ../netlist/layout/sky130_ef_ip__scomp3v.spice
-Flattening instances of comparator_high_gain in file /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 
 Contents of circuit 1:  Circuit: 'scomp_bias'
 Circuit scomp_bias contains 11 device instances.
@@ -340,26 +336,22 @@ Circuit 1 contains 2 nets,    Circuit 2 contains 2 nets.
 
 
 Contents of circuit 1:  Circuit: 'sky130_ef_ip__scomp3v'
-Circuit sky130_ef_ip__scomp3v contains 17 device instances.
+Circuit sky130_ef_ip__scomp3v contains 4 device instances.
   Class: scomp_bias            instances:   1
   Class: sky130_fd_sc_hvl__diode_2 instances:   1
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   6
+  Class: comparator_high_gain  instances:   1
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   6
-  Class: sky130_fd_pr__nfet_05v0_nvt instances:   2
-Circuit contains 17 nets.
+Circuit contains 11 nets.
 Contents of circuit 2:  Circuit: 'sky130_ef_ip__scomp3v'
-Circuit sky130_ef_ip__scomp3v contains 17 device instances.
+Circuit sky130_ef_ip__scomp3v contains 4 device instances.
   Class: scomp_bias            instances:   1
   Class: sky130_fd_sc_hvl__diode_2 instances:   1
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   6
+  Class: comparator_high_gain  instances:   1
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   6
-  Class: sky130_fd_pr__nfet_05v0_nvt instances:   2
-Circuit contains 19 nets.
+Circuit contains 11 nets.
 
-Circuit 1 contains 17 devices, Circuit 2 contains 17 devices.
-Circuit 1 contains 17 nets,    Circuit 2 contains 17 nets.
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
 
 
 Final result: 

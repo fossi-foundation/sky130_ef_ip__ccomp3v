@@ -142,12 +142,12 @@ VOUT                                       |VOUT
 DVSS                                       |DVSS                                       
 VINM                                       |VINM                                       
 VINP                                       |VINP                                       
-w_355_n3243#                               |(no pin, node is net1                      
+w_306_n3276#                               |(no pin, node is net1)                     
 VDD                                        |VDD                                        
+m2_4679_n3224#                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists for comparator_high_gain and comparator_high_gain altered to match.
 Device classes comparator_high_gain and comparator_high_gain are equivalent.
-  Flattening non-matched subcircuits comparator_high_gain comparator_high_gain
 Flattening unmatched subcell sky130_fd_pr__res_high_po_1p41_3L9D94 in circuit scomp_bias (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_35MXHD in circuit scomp_bias (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_VXYCT5 in circuit scomp_bias (0)(2 instances)
@@ -234,14 +234,12 @@ Device classes sky130_fd_sc_hvl__diode_2 and sky130_fd_sc_hvl__diode_2 are equiv
 Subcircuit summary:
 Circuit 1: sky130_ef_ip__scomp3v           |Circuit 2: sky130_ef_ip__scomp3v           
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_g5v0d10v5 (8->6)        |sky130_fd_pr__pfet_g5v0d10v5 (8->6)        
-sky130_fd_pr__nfet_g5v0d10v5 (14->6)       |sky130_fd_pr__nfet_g5v0d10v5 (14->6)       
-sky130_fd_pr__nfet_05v0_nvt (20->2)        |sky130_fd_pr__nfet_05v0_nvt (20->2)        
+comparator_high_gain (1)                   |comparator_high_gain (1)                   
 scomp_bias (1)                             |scomp_bias (1)                             
 sky130_fd_sc_hvl__lsbuflv2hv_1 (1)         |sky130_fd_sc_hvl__lsbuflv2hv_1 (1)         
 sky130_fd_sc_hvl__diode_2 (1)              |sky130_fd_sc_hvl__diode_2 (1)              
-Number of devices: 17                      |Number of devices: 17                      
-Number of nets: 17                         |Number of nets: 17                         
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 11                         |Number of nets: 11                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
@@ -250,11 +248,11 @@ Circuit 1: sky130_ef_ip__scomp3v           |Circuit 2: sky130_ef_ip__scomp3v
 -------------------------------------------|-------------------------------------------
 VDD                                        |VDD                                        
 DVSS                                       |DVSS                                       
-ENA                                        |ENA                                        
-DVDD                                       |DVDD                                       
 VINP                                       |VINP                                       
 VOUT                                       |VOUT                                       
 VINM                                       |VINM                                       
+ENA                                        |ENA                                        
+DVDD                                       |DVDD                                       
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
