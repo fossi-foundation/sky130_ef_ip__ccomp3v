@@ -1,17 +1,12 @@
 #! /bin/bash
 
-project=sky130_ef_ip__ccomp3v_cl
-
-echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
-echo ${PDK:=sky130A} > /dev/null
-
-magic -dnull -noconsole -rcfile \$PDK_ROOT/\$PDK/libs.tech/magic/\$PDK.magicrc << EOF
-load ${project}
+magic -dnull -noconsole -rcfile \$PDK_ROOT/\$PDK/libs.tech/magic/sky130A.magicrc << EOF
+load sky130_ef_ip__ccomp3v_cl
 select top cell
 extract path extfiles
 extract all
 ext2spice lvs
-ext2spice -p extfiles -o ../netlist/layout/${project}.spice
+ext2spice -p extfiles -o ../netlist/layout/sky130_ef_ip__ccomp3v_cl.spice
 quit -noprompt
 EOF
 rm -r extfiles
